@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='_MigrationReport_Files/MigrationReport.xslt'?>
+<UpgradeLog>
+<Properties>
+<Property Name="Solution" Value="C:\Users\ortiz\Documents\School\C969\C969_performance_assessment\C969_performance_assessment.sln"></Property>
+<Property Name="Solution File" Value="C:\Users\ortiz\Documents\School\C969\C969_performance_assessment"></Property>
+<Property Name="Date" Value="3/16/2023 1:16:46 PM"></Property>
+</Properties>
+<Event ErrorLevel="3" Project="C969_performance_assessment" Source="App.config" Description="No need to convert"></Event>
+<Event ErrorLevel="3" Project="C969_performance_assessment" Source="LoginForm.cs" Description="No need to convert"></Event>
+<Event ErrorLevel="3" Project="C969_performance_assessment" Source="MainForm.cs" Description="No need to convert"></Event>
+<Event ErrorLevel="3" Project="C969_performance_assessment" Source="packages.config" Description="No need to convert"></Event>
+<Event ErrorLevel="3" Project="C969_performance_assessment" Source="Program.cs" Description="No need to convert"></Event>
+<Event ErrorLevel="3" Project="C969_performance_assessment" Source="AssemblyInfo.cs" Description="No need to convert"></Event>
+<Event ErrorLevel="3" Project="C969_performance_assessment" Source="Resources.Designer.cs" Description="No need to convert"></Event>
+<Event ErrorLevel="3" Project="C969_performance_assessment" Source="Settings.Designer.cs" Description="No need to convert"></Event>
+
+</UpgradeLog>

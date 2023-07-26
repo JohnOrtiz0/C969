@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="client_scheduleDataSet" targetNamespace="http://tempuri.org/client_scheduleDataSet.xsd" xmlns:mstns="http://tempuri.org/client_scheduleDataSet.xsd" xmlns="http://tempuri.org/client_scheduleDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="client_scheduleConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="client_scheduleConnectionString (Settings)" PropertyReference="ApplicationSettings.C969_performance_assessment.Properties.Settings.GlobalReference.Default.client_scheduleConnectionString" Provider="Devart.Data.MySql" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="addressTableAdapter" GeneratorDataComponentClassName="addressTableAdapter" Name="address" UserDataComponentName="addressTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="client_scheduleConnectionString (Settings)" DbObjectName="client_schedule.address" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT address, postalCode, phone FROM client_schedule.address</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="postalCode" DataSetColumn="postalCode" />
+              <Mapping SourceColumn="phone" DataSetColumn="phone" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="cityTableAdapter" GeneratorDataComponentClassName="cityTableAdapter" Name="city" UserDataComponentName="cityTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="client_scheduleConnectionString (Settings)" DbObjectName="client_schedule.city" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT city FROM client_schedule.city</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="countryTableAdapter" GeneratorDataComponentClassName="countryTableAdapter" Name="country" UserDataComponentName="countryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="client_scheduleConnectionString (Settings)" DbObjectName="client_schedule.country" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT country FROM client_schedule.country</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="country" DataSetColumn="country" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="customerTableAdapter" GeneratorDataComponentClassName="customerTableAdapter" Name="customer" UserDataComponentName="customerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="client_scheduleConnectionString (Settings)" DbObjectName="client_schedule.customer" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT customerName FROM client_schedule.customer</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="customerName" DataSetColumn="customerName" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="client_scheduleConnectionString (Settings)" DbObjectName="client_schedule.customer" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT customerName FROM client_schedule.customer</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="client_scheduleDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="client_scheduleDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="client_scheduleDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="address" msprop:Generator_RowClassName="addressRow" msprop:Generator_RowEvHandlerName="addressRowChangeEventHandler" msprop:Generator_RowDeletedName="addressRowDeleted" msprop:Generator_RowDeletingName="addressRowDeleting" msprop:Generator_RowEvArgName="addressRowChangeEvent" msprop:Generator_TablePropName="address" msprop:Generator_RowChangedName="addressRowChanged" msprop:Generator_UserTableName="address" msprop:Generator_RowChangingName="addressRowChanging" msprop:Generator_TableClassName="addressDataTable" msprop:Generator_TableVarName="tableaddress">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="address" msprop:Generator_UserColumnName="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnVarNameInTable="columnaddress" type="xs:string" />
+              <xs:element name="postalCode" msprop:Generator_UserColumnName="postalCode" msprop:Generator_ColumnPropNameInTable="postalCodeColumn" msprop:Generator_ColumnPropNameInRow="postalCode" msprop:Generator_ColumnVarNameInTable="columnpostalCode" type="xs:string" />
+              <xs:element name="phone" msprop:Generator_UserColumnName="phone" msprop:Generator_ColumnPropNameInTable="phoneColumn" msprop:Generator_ColumnPropNameInRow="phone" msprop:Generator_ColumnVarNameInTable="columnphone" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="city" msprop:Generator_RowClassName="cityRow" msprop:Generator_RowEvHandlerName="cityRowChangeEventHandler" msprop:Generator_RowDeletedName="cityRowDeleted" msprop:Generator_RowDeletingName="cityRowDeleting" msprop:Generator_RowEvArgName="cityRowChangeEvent" msprop:Generator_TablePropName="city" msprop:Generator_RowChangedName="cityRowChanged" msprop:Generator_UserTableName="city" msprop:Generator_RowChangingName="cityRowChanging" msprop:Generator_TableClassName="cityDataTable" msprop:Generator_TableVarName="tablecity">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="city" msprop:Generator_UserColumnName="city" msprop:Generator_ColumnPropNameInTable="cityColumn" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnVarNameInTable="columncity" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="country" msprop:Generator_RowClassName="countryRow" msprop:Generator_RowEvHandlerName="countryRowChangeEventHandler" msprop:Generator_RowDeletedName="countryRowDeleted" msprop:Generator_RowDeletingName="countryRowDeleting" msprop:Generator_RowEvArgName="countryRowChangeEvent" msprop:Generator_TablePropName="country" msprop:Generator_RowChangedName="countryRowChanged" msprop:Generator_UserTableName="country" msprop:Generator_RowChangingName="countryRowChanging" msprop:Generator_TableClassName="countryDataTable" msprop:Generator_TableVarName="tablecountry">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="country" msprop:Generator_UserColumnName="country" msprop:Generator_ColumnPropNameInTable="countryColumn" msprop:Generator_ColumnPropNameInRow="country" msprop:Generator_ColumnVarNameInTable="columncountry" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="customer" msprop:Generator_RowClassName="customerRow" msprop:Generator_RowEvHandlerName="customerRowChangeEventHandler" msprop:Generator_RowDeletedName="customerRowDeleted" msprop:Generator_RowDeletingName="customerRowDeleting" msprop:Generator_RowEvArgName="customerRowChangeEvent" msprop:Generator_TablePropName="customer" msprop:Generator_RowChangedName="customerRowChanged" msprop:Generator_UserTableName="customer" msprop:Generator_RowChangingName="customerRowChanging" msprop:Generator_TableClassName="customerDataTable" msprop:Generator_TableVarName="tablecustomer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="customerName" msprop:Generator_UserColumnName="customerName" msprop:Generator_ColumnPropNameInTable="customerNameColumn" msprop:Generator_ColumnPropNameInRow="customerName" msprop:Generator_ColumnVarNameInTable="columncustomerName" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
